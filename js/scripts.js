@@ -35,4 +35,24 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.3 });
 
+
+const form = document.querySelector('#contactForm');
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault(); // stay on the page
+    const formData = new FormData(form);
+
+    try {
+      await fetch(form.action, {
+        method: 'POST',
+        body: formData
+      });
+
+      // show message about success
+      document.getElementById('successMsg').classList.remove('hidden');
+      form.reset();
+    } catch (err) {
+      alert('Error. Try late.');
+    }
+  });
+
 sections.forEach(section => observer.observe(section));

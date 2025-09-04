@@ -205,7 +205,7 @@
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <!--<section id="contact" class="section">
         <h2>Contact</h2>
         <form class="contact-form" id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
@@ -214,7 +214,31 @@
             <button type="submit">Send Message</button>
         </form>
         <p>Or reach out directly: <a href="mailto:e.ermolchenko@gmail.com">e.ermolchenko@gmail.com</a></p>
-    </section>
+    </section>-->
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form id="contactForm" action="https://formsubmit.co/e.ermolchenko@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      
+          <!-- hidden fields -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+      
+          <button type="submit">Send Message</button>
+        </form>
+      
+        <!-- Custom success message -->
+        <div id="successMsg" class="hidden">
+          ✅ Thank you! Your message has been sent.
+        </div>
+      
+        <p>Or reach out directly:
+          <a href="mailto:e.ermolchenko@gmail.com">e.ermolchenko@gmail.com</a>
+        </p>
+      </section>
 
     <footer>
         <p>&copy; 2025 Olena Yermolchenko. All rights reserved. | <a href="https://linkedin.com/in/elena-yermolchenko">LinkedIn</a> | <a href="https://github.com/YESik25">GitHub</a></p>

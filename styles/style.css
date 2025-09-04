@@ -78,7 +78,7 @@ nav {display:flex; justify-content:space-between; align-items:center; max-width:
 #contact a:hover{color:#FFA500}
 
 
-/* Career/Education */
+/* Career/Education Form*/
 .career-grid, .education-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:2.5rem; margin-top:2.5rem;}
 .career-item, .education-item {background:#2E2E3E; padding:2rem; border-radius:12px; transition:.3s;}
 .career-item:hover, .education-item:hover {transform:translateY(-8px); box-shadow:0 4px 12px rgba(249,115,22,.2);}
@@ -91,24 +91,13 @@ footer {background:#2E2E3E; padding:2.5rem; text-align:center; color:#A0A0A0; bo
 footer a {color:#F97316; text-decoration:none; transition:.3s;}
 footer a:hover {color:#FFA500;}
 
-/*ContactMessage*/
-#successMsg {
-    margin-top: 1rem;
-    background: #2E2E3E;
-    color: #E0E0E0;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    animation: fadeIn 0.5s ease-out;
-  }
-  .hidden {
-    display: none;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+/*Thank Form*/
+.section.thank-section{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:70vh;text-align:center;gap:1.5rem}
+.section.thank-section h2{color:#4F97FF;font-size:2.5rem}
+.section.thank-section p{color:#A0A0A0;font-size:1.2rem}
+.section.thank-section a{color:#F97316;text-decoration:none;font-weight:500;transition:.3s}
+.section.thank-section a:hover{color:#FFA500}
+
 
 /* Responsive */
 @media(max-width:768px){

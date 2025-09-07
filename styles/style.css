@@ -40,7 +40,7 @@ nav {display:flex; justify-content:space-between; align-items:center; max-width:
 .skill-item i {font-size:2rem; color:#E0E0E0; transition:.3s;}
 .skill-item:hover i {color:#F97316; transform:scale(1.1);}
 .skill-item .tooltip .tooltip-text {visibility:hidden; width:120px; background:#2E2E3E; color:#E0E0E0; text-align:center; border-radius:6px; padding:5px; position:absolute; z-index:1; bottom:125%; left:50%; transform:translateX(-50%); opacity:0; transition:.3s;}
-.skill-item .tooltip:hover .tooltip-text {visibility:visible; opacity:1;}
+/*.skill-item .tooltip:hover .tooltip-text {visibility:visible; opacity:1;}*/
 .skill-item h3 {font-size:1rem; font-weight:500; color:#E0E0E0;}
 .progress-bar {background:#A0A0A0; height:12px; border-radius:6px; overflow:hidden;}
 .progress {background:#F97316; height:100%; transition:width 1.2s ease-in-out;}
